@@ -5,7 +5,7 @@ require.config({
     'OrbitControls': 'vendor/OrbitControls',
     'Stats': 'vendor/Stats',
     'underscore': 'vendor/underscore',
-    'dat.gui.min': 'vendor/dat.gui.min'
+    'dat.gui.min': 'vendor/DAT.GUI.min'
   },
   shim: {
     'three': { exports: 'THREE' },
@@ -82,7 +82,7 @@ function init()
 		scene.add(sphere);
 	});
 	
-	require(['dat.gui.min'], function(GUI) 
+	require(['dat.gui.min'], function() 
 	{
 		gui = new dat.GUI();
 	
